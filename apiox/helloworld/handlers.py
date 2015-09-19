@@ -18,4 +18,4 @@ class IndexHandler(BaseHandler):
                                   'token': {'user': request.token.user,
                                             'client': request.token.client_id,
                                             'account': request.token.account_id,
-                                            'scopes': request.token.scopes}})
+                                            'scopes': sorted(request.token.scopes)}})
